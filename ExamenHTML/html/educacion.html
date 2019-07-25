@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Hoja de Vida</title>
+  </head>
+  <body>
+    <header>
+      <svg width="250" height="100">
+        <image xlink:href="../images/logo.svg" width="250" height="100"/>
+      </svg>
+
+      <h1>Hoja de Vida</h1>
+
+      <h2><strong>Datos Personales</strong></h2>
+
+      <h2><strong>Nombre :</strong></h2>
+      <h3><em>Jesus Antonio Rico Vigil</em></h3>
+      <h2><strong>Fecha y Lugar de Nacimiento: </strong></h2>
+      <h3><em>29 de Octubre de 1993. Saltillo, Coahuila de Zaragoza, México.</em></h3>
+    </header>
+    <nav>
+      <a href="../index.html">INICIO</a> |
+      <a href="educacion.html">EDUCACIÓN</a> |
+      <a href="../html/experiencia.html">EXPERIENCIA</a> |
+    </nav>
+    <section>
+      <h2>Educación</h2>
+      <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+          <th>Año</th>
+          <th>Institución</th>
+          <th>Lugar</th>
+          <th>¿Culminó?</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2006-2009</td>
+            <td>Escuela Secundaria Francisco I. Madero</td>
+            <td>Saltillo, Coahuila</td>
+            <td>Sí</td>
+          </tr>
+          <tr>
+            <td>2009-2012</td>
+            <td>Centro de Bachillerato Tecnológico Industrial y de Servicios Nº 97</td>
+            <td>Saltillo, Coahuila</td>
+            <td>Sí</td>
+          </tr>
+          <tr>
+            <td>2013-2018</td>
+            <td>Instituto Tecnológico de Saltillo</td>
+            <td>Saltillo, Coahuila</td>
+            <td>Sí</td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+      </table>
+      <br>
+      <br>
+      <form class="" action="" method="post">
+        <fieldset>
+          <legend><strong>Agregar Estudios</strong></legend>
+          <label for="anio"><strong>Año</strong></label>
+          <select name="anio" id="anio">
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+          </select>
+          <br>
+          <br>
+          <label for="institucion">Institución:</label>
+          <input type="text" size="35" name="institucion" placeholder="Ingrese Institucion Academica.." required>
+          <br>
+          <br>
+          <label for="lugar"><strong>Lugar:</strong></label>
+          <input type="text" name="" value="" style="line-height: 2em;">
+          <br><br>
+          <button type="button" name="button">Enviar</button>
+        </fieldset>
+      </form>
+    </section>
+    
+    <footer>
+      <a href="mailto:antonio.rico@protexa.com.mx">Contactame vía Email</a> | Número Telefonico : 844-452-9997
+    </footer>
+  </body>
+</html>
