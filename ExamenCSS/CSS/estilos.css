@@ -1,0 +1,207 @@
+body{
+  font-family: 'Dancing Script', cursive;
+  background-color: #02010a;
+}
+
+header{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #5b7989;
+  display: flex;
+  animation: SlideIn 1s;
+}
+
+header > h1 {
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+  padding: 10px 10px 10px 30px;
+  width: 70%;
+}
+
+.menu{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu > a{
+  padding: 10px 10px 10px 10px;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+  font-size: 25px;
+}
+
+div>a>img{
+  box-shadow: 2px 2px 2px #02010a;
+}
+
+.imgCentral>img{
+  box-shadow: 2px 2px 2px #02010a;
+}
+
+#Inicio{
+  text-decoration: none;
+}
+
+@keyframes firstImage {
+  0% { transform:rotate(0deg); }
+  100% { transform:rotate(10deg); box-shadow: 2px 2px 2px 2px #82c3a6;}
+}
+
+@keyframes lastImage {
+  0% { transform: translate(0px, 0px); }
+  100% { transform: translate(5px, -20px); box-shadow: 2px 2px 2px 2px #82c3a6;}
+}
+
+@keyframes SlideIn {
+  0% { margin-top: 150%;}
+  60 { margin-top: -5%;}
+  100% { margin-top: 0%;}
+}
+
+.imgSecundaria>a>.uno:hover {
+  animation: firstImage 2s ;
+}
+
+.imgSecundaria>a>.dos:hover {
+  animation: lastImage 2s ;
+}
+
+@media screen and (min-width: 900px) {
+  .imgCentral{
+    background-color: #82c3a6;
+    display: flex;
+    justify-content: center;
+    padding: 3% 3% 3% 3%;
+  }
+
+  .imgSecundaria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2% 2% 2% 2%;
+    background-color: #d5c75f;
+  }
+
+  footer{
+    background-color: #C6d5c5;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  footer > div > p{
+    font-size: 20px;
+  }
+
+  .columnas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2% 2% 2% 2%;
+    background-color: #d5c75f;
+  }
+
+  .primerColumna{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .segundaColumna{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tercerColumna{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .columnas > div > img{
+    margin: 20px 20px 20px 20px;
+    box-shadow: 2px 2px 2px #02010a;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  header{
+    display: block;
+  }
+
+  header > h1 {
+    color: white;
+    text-shadow: 2px 2px 2px #02010a;
+    padding: 10px 10px 10px 30px;
+    width: 100%;    
+  }
+
+  .menu{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .menu > a{
+    padding: 10px 10px 10px 10px;
+    color: white;
+    text-shadow: 2px 2px 2px #02010a;
+    font-size: 20px;
+  }
+
+  .imgCentral{
+    background-color: #82c3a6;
+    display: flex;
+    justify-content: center;
+    padding: 3% 3% 3% 3%;
+  }
+
+  .imgCentral>img{
+    width: 50%;
+    height: 50%;
+  }
+
+  .imgSecundaria{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    background-color: #d5c75f;
+  }
+
+  .imgSecundaria>a>img{
+    width: 50%;
+    height: 50%;
+    margin: 10px 10px 10px 10px;
+  }
+
+  footer{
+    background-color: #C6d5c5;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center
+  }
+
+  footer > div > p{
+    font-size: 16px;
+  }
+
+  .columnas{
+    display: flex;
+    flex-direction: column;
+    padding: 2% 2% 2% 2%;
+    background-color: #d5c75f;
+    text-align: center;
+  }
+
+
+  .columnas > div > img{
+    margin: 20px 20px 20px 20px;
+    box-shadow: 2px 2px 2px #02010a;
+    width: 50%;
+    height: 50%;
+  }
+}
