@@ -1,0 +1,90 @@
+body{
+
+  background-image: url('../Imagenes/kitchen.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.encabezado{
+  border-right-style:solid;
+  border-right-color: #e0e0e0;
+  border-right-width: 3px;
+}
+
+.separador{
+  margin-top: 1rem;
+  border-top-style:solid;
+  border-top-color: #e0e0e0;
+  border-top-width: 3px;
+}
+
+.grid-container{
+  background: RGBA(0,0,0,.5);
+}
+
+h2{
+  color: white;
+}
+
+h6{
+  color: white;
+}
+
+h5{
+  color: white;
+}
+
+.menu{
+  margin: 5px 5px 5px 5px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #e0e0e0;
+}
+
+ul>li>a{
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0px 15px 15px 15px;
+  color: white;
+}
+
+p{
+  margin: 15px 15px 15px 15px;
+}
+
+a, p{
+  color: white;
+}
+
+.grid-padding-x .grid-padding-x {
+     margin-right: 0rem;
+     margin-left: 0rem;
+}
+
+.left{
+  margin-top: 25px;
+  background: rgba(248, 187, 208, .3);
+}
+
+.right{
+  margin-top: 25px;
+  background: rgba(144, 202, 249, .3);
+}
+
+@media screen and (min-width: 320px) {
+  .comentarios{
+    margin: 0px 15px 0px 15px !important;
+    width:90% !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+    .comentarios{
+      margin: 0px 15px 15px 15px !important;
+      width:95% !important;
+    }
+}

@@ -1,0 +1,54 @@
+@font-face
+{
+  font-family: Ska;
+  src: url('../Fonts/SKATERDUDES.ttf');
+}
+
+.navegacion{
+  background-color: #f9a825;
+}
+
+body{
+  background-color: #c62828;
+}
+
+div > ul > li > a {
+  color: black;
+}
+
+.nav-link:focus, .nav-link:hover {
+    background-color: white !important;
+}
+
+
+div > ul > a {
+  color: black;
+}
+
+@media screen and (min-width: 320px) {
+  .justify-content-end{
+    justify-content: center !important;
+  }
+
+  .mr-4{
+    margin-right: 0 !important;
+  }
+
+  .pt-4{
+    padding-top: 0 !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .justify-content-end{
+    justify-content: flex-end !important;
+  }
+
+  .mr-4{
+    margin-right: 1.5rem !important;
+  }
+
+  .pt-4{
+    padding-top: 1.5rem !important;
+  }
+}

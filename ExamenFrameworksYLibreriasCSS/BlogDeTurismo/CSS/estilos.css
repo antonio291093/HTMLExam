@@ -1,0 +1,115 @@
+body{
+  background: rgba(66, 165, 245, .5);
+  background-image: url('../Imagenes/forest.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-position-y: 150px;
+}
+
+nav{
+  background-color: transparent;
+}
+
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav{
+   box-shadow: none;
+}
+
+.autor, .museo{
+  background-color: #b0bec5;
+}
+
+.contacto{
+  background-color: #90caf9;
+  margin-top: 2%;
+}
+
+
+
+.footer > .btn{
+  background-color: white;
+  color: #90caf9;
+}
+
+.encabezado{
+  display: flex;
+  flex-direction: row;
+}
+
+.autor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 320px) {
+  nav ul a.btn, nav ul a.btn-large, nav ul a.btn-small, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
+      /* margin-top: -2px; */
+      /* margin-left: 15px; */
+      margin-right: 1px;
+  }
+
+  i.left {
+     margin-right: 0px;
+  }
+
+  #logo{
+    width: 100px;
+    height: 100px;
+  }
+
+  nav .brand-logo{
+    left: 20%;
+    top: 90%;
+  }
+
+  .museo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .autor{
+    margin-top: 2rem;
+  }
+
+  .boton{
+    margin-left: 35%;
+    margin-top: 10%;
+  }
+
+  .destinos{
+    margin-top: 75px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #logo{
+    width:150px;
+    height:150px;
+    margin:35px 0px 0px 150px;
+  }
+
+  nav .brand-logo{
+    left: 0%;
+    top: 10%;
+  }
+
+  .museo{
+    display: block;
+  }
+
+  .autor{
+    margin-top: 0rem;
+  }
+
+  .boton{
+    float: right;
+    margin-right: 5%;
+    margin-top: 2%;
+  }
+
+  .destinos{
+    margin-top: 150px;
+  }
+}
