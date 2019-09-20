@@ -117,7 +117,7 @@ var Calculadora = (function(){
     return numero1 - numero2;
   }
 
-  function Multplicar(numero1, numero2) {
+  function Multiplicar(numero1, numero2) {
     return numero1 * numero2;
   }
 
@@ -129,7 +129,7 @@ var Calculadora = (function(){
     resultado : function(){
         Sumar();
         Restar();
-        Multplicar();
+        Multiplicar();
         Dividir();
     }
 
