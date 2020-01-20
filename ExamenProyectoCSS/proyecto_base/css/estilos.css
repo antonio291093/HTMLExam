@@ -1,0 +1,268 @@
+@font-face
+{
+  font-family: Wishes;
+  src: url('../Fonts/WISHES.otf');
+}
+
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+form,
+footer,
+header,
+menu,
+nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+header{
+  background-color: #ef5350;
+  display: flex;
+}
+
+
+
+header > nav {
+  color: white;
+  padding: 10px 10px 10px 30px;
+}
+
+header > nav > ul{
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  font-family: cursive;
+}
+
+header > nav > ul > li{
+  padding-right: 1rem;
+}
+
+header > nav > ul > li > a{
+  color: white;
+  text-decoration: none;
+}
+
+.principal{
+  height: 500px;
+  background-color: red;
+  background-image: url("../images/inicial2.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.principal > .contenido{
+  width: 20%;
+  height: 175px;
+  background-color: #ffca28;
+  opacity: .6;
+  margin-top: 50px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.principal > .contenido > h2{
+  padding: 10px 10px 10px 10px;
+  font-family: Wishes;
+}
+
+.principal > .contenido > p{
+  padding: 0px 10px 10px 10px;
+  font-family: cursive;
+}
+
+.lugar > .contenido{
+  display: flex;
+}
+
+.imagen-principal, .imagen-secundaria{
+  justify-content: center;
+  display: flex;
+  padding: 25px 25px 25px 25px;
+}
+
+.descripcion{
+  width: 50%;
+}
+
+.descripcion > h2 {
+  font-family: Wishes;
+  font-size: 32px;
+  padding-top: 25px;
+}
+
+.descripcion > p{
+  font-family: cursive;
+}
+
+img{
+  width: 75%;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.playa{
+  background-color: #f9fbe7;
+  text-align: center;
+}
+
+.parque{
+  background-color: #f1f8e9;
+  text-align: center;
+}
+
+.rio{
+  background-color: #ffebee;
+  text-align: center;
+}
+
+footer{
+  display: flex;
+}
+
+.contacto{
+  border: solid;
+  border-width: 1px;
+  border-radius: 15px 15px 15px 15px;
+  padding: 25px 25px 25px 25px;
+  margin: 25px 25px 25px 25px;
+  background-color: #fff8e1;
+  border-color: #ffe082;
+}
+
+.informacion{
+  padding: 25px 25px 25px 25px;
+}
+
+input, textarea{
+  width: 100%;
+  margin: 0px 0px 15px 0px;
+  border-color: #ffe082;
+}
+
+button{
+  border-radius: 5px 5px 5px 5px;
+  background-color: #ffb300;
+}
+
+
+@media only screen and (max-width: 600px) {
+  header{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header > h1{
+    font-family: Wishes;
+    color: white;
+  }
+
+  .principal{
+    height: 400px;
+  }
+
+  .principal > .contenido {
+    width: 80%;
+    height: 250px;
+    background-color: #ffca28;
+    opacity: .6;
+    margin-top: 15px;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .lugar > .contenido{
+    flex-direction: column;
+  }
+
+  .imagen-principal{
+    display: none;
+  }
+
+  .descripcion{
+    width: 100%;
+  }
+
+  footer{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .imagen-principal{
+    display: none;
+  }
+
+  header > h1{
+    font-family: Wishes;
+    color: white;
+    font-size: 24px;
+  }
+
+  .descripcion{
+    width: 90%;
+  }
+
+  footer{
+    justify-content: center;
+  }
+
+  .principal > .contenido {
+    width: 80%;
+    height: 100px;
+    background-color: #ffca28;
+    opacity: .6;
+    margin-top: 15px;
+    border-radius: 10px 10px 10px 10px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .lugar > .contenido{
+    flex-direction: row;
+  }
+
+  .principal > .contenido{
+    width: 25%;
+    height: 175px;
+    margin-top: 75px;
+  }
+
+  header > h1 {
+    color: white;
+    padding: 10px 10px 10px 30px;
+    font-family: Wishes;
+    font-size: 24px;
+  }
+
+  .informacion, .contacto{
+    width: 50%;
+  }
+
+  footer{
+    flex-direction: row;
+  }
+
+  .imagen-principal{
+    display: block;
+  }
+}
